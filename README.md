@@ -19,7 +19,7 @@ A common approach is to place functions, classes, or other related code into mod
 
 Whenever you are creating a new Python project, it is best to stay organized by placing all the files related to the project in the same folder. This is especially true for this activity. Be sure to create a folder named `root`.
 
-Inside the folder, create a new `main.py` file. **You will also create a file called `utils.py`.** *Please make sure for this activity that your file names are exactly the same as these.*
+Inside the folder, create a new `Root Folder for Activity 9/main.py` file. **You will also create a file called `utils.py`.** *Please make sure for this activity that your file names are exactly the same as these.*
 
 ## 2. Planning Out the Game
 
@@ -113,11 +113,11 @@ for _ in range(3):
     check_user_guess(number_to_print)
 ```
 
-When we run our code, we should get a pretty clear idea of whether or not it works. At this point, we can move on to creating our actual game in `main.py`
+When we run our code, we should get a pretty clear idea of whether or not it works. At this point, we can move on to creating our actual game in `Root Folder for Activity 9/main.py`
 
-## 4. Importing to `main.py`
+## 4. Importing to `Root Folder for Activity 9/main.py`
 
-If we want to actually use these functions we have created, we can import `utils.py` directly into `main.py`:
+If we want to actually use these functions we have created, we can import `utils.py` directly into `Root Folder for Activity 9/main.py`:
 
 ```python main.py
 import utils
@@ -135,9 +135,9 @@ while True:
 
 This code will work just fine, but usually when you are creating your own modules, you want them imported directly into the main file's namespace.
 
-## 5. Importing Directly into the `main.py` Namespace
+## 5. Importing Directly into the `Root Folder for Activity 9/main.py` Namespace
 
-To import them directly into `main.py`'s namespace, we can use the following code:
+To import them directly into `Root Folder for Activity 9/main.py`'s namespace, we can use the following code:
 
 ```python main.py
 from utils import generate_secret_number, check_user_guess
@@ -149,7 +149,7 @@ while True:
         break
 ```
 
-Time to run our `main.py` file and see how it works!
+Time to run our `Root Folder for Activity 9/main.py` file and see how it works!
 
 Oh no! We get all of the `print()` statements from our other file!
 
@@ -179,7 +179,7 @@ if __name__ == "__main__":
 
 Then try running `utils.py`. You'll notice that it still runs like normal!
 
-Now try running `main.py`. You'll notice that now it doesn't output all of the extra information from `utils.py`!
+Now try running `Root Folder for Activity 9/main.py`. You'll notice that now it doesn't output all of the extra information from `utils.py`!
 
 Including `if __name__ == "__main__"` for test code is a standard practice when creating Python modules and is expected to be used.
 
@@ -193,6 +193,6 @@ Extend the Number Guessing Game by adding a second module that manages the playe
 * The player starts with **100 points** and loses **10 points for every incorrect guess**. The score cannot go below `0`.
 * Create a function in `score.py` that accepts the **current score** and returns the new score after an incorrect guess.
 * Create a second function in `score.py` that accepts the **final score** and returns a rating: **80–100 = `"Excellent"`, 50–79 = `"Good"`, and 0–49 = `"Keep Practicing"`**.
-* Import both functions into `main.py`. When the player correctly guesses the number, display their **final score and rating**.
+* Import both functions into `Root Folder for Activity 9/main.py`. When the player correctly guesses the number, display their **final score and rating**.
 * Program appropriately uses `__name__ == "__main__"` to prevent data from contaminating programs in other files.
 
